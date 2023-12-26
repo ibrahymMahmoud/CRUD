@@ -1,0 +1,15 @@
+body {
+    background-color: #F7ECDE;
+}
+h1 {
+
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+}
+.text-start , h1 {
+    border-bottom: dashed 2px black;
+}

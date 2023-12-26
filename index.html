@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+
+</head>
+
+<body>
+    <section class="text-center container m-auto mt-4 pb-5  ">
+        <h1 class="pb-3">Bookmarker</h1>
+        <h3 class="mb-3 mt-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                class="fa-solid fa-bookmark"></i></h3>
+        <div class="text-start">
+            <label class="" for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input type="text" class="form-control mb-2" id="siteName" placeholder="site name">
+            <label class="" for="siteUrl"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="valid url">
+            <div class="text-center py-3" id="buttons">
+                <button class=" btn btn-success " onclick="addSite();">subment</button>
+                <button class=" btn btn-primary" onclick="clearInput();">clear</button>
+            </div>
+            <input id="searchSite" type="text" onkeyup="searchSite();" onfocus="searchSite();" class="form-control mb-2"
+                placeholder="search using site name">
+        </div>
+        <table class="table w-100 text-center  my-2 ">
+            <thead>
+                <th>index</th>
+                <th>site name</th>
+                <th>visit</th>
+                <th>action</th>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
